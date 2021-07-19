@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/types"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/style"
+        android:overScrollMode="ifContentScrolls"
+        android:paddingBottom="12dp"
+        app:tabIndicatorColor="#00FFFFFF"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#1A237E"
+        app:tabTextColor="#FFFFFF">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/All"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All " />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Services" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Taxes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taxes" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/EMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMI" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/Bills_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/types" >
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        android:onClick="newBill"
+        app:backgroundTint="#F54343"
+        app:elevation="12dp"
+        app:srcCompat="@drawable/ic_add_black_24dp" />
+</RelativeLayout>

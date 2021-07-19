@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">budget</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="items">
+        <item>Services</item>
+        <item>Tax</item>
+        <item>EMI</item>
+        <item>Others</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#47B404"
+        android:gravity="center"
+        android:text="Edit Item"
+        android:textColor="#F1F1F1"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/t_name"
+        android:layout_width="100dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="1dp"
+        android:background="#F06767"
+        android:gravity="center"
+        android:text="Name"
+        android:textColor="#FFFDFD"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/e_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@id/t_name"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/e_Quantity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/e_name"
+        android:layout_toRightOf="@id/t_name"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/e_required"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/e_Quantity"
+        android:layout_toRightOf="@id/t_name"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/e_cost"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/e_required"
+        android:layout_toRightOf="@id/t_name"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="15dp" />
+
+    <TextView
+        android:id="@+id/t_quantity"
+        android:layout_width="100dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/t_name"
+        android:layout_marginBottom="1dp"
+        android:background="#F06767"
+        android:gravity="center"
+        android:text="Quantity"
+        android:textColor="#FFFDFD"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/t_required"
+        android:layout_width="100dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/t_quantity"
+        android:layout_marginBottom="1dp"
+        android:background="#F06767"
+        android:gravity="center"
+        android:text="Required"
+        android:textColor="#FFFDFD"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/t_cost"
+        android:layout_width="100dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/t_required"
+        android:layout_marginBottom="1dp"
+        android:background="#F06767"
+        android:gravity="center"
+        android:text="Cost"
+        android:textColor="#FFFDFD"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActualBill">
+
+    <TextView
+        android:id="@+id/textview5"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@drawable/de"
+        android:fontFamily="serif"
+        android:paddingLeft="30dp"
+        android:text="Bill"
+        android:textColor="#F0F0F0"
+        android:textSize="33sp" />
+
+    <TextView
+        android:id="@+id/cost123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/search_text"
+        android:backgroundTint="#FCF1BD"
+        android:fontFamily="serif"
+        android:maxWidth="240dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="8dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="8dp"
+        android:text="TextView"
+        android:textSize="26dp" />
+
+    <ImageButton
+        android:id="@+id/add123"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@id/cost123"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="add"
+        app:srcCompat="@drawable/ic_add_black_24dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fb11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:clickable="true"
+        android:onClick="Buy"
+        app:backgroundTint="#F81F1F"
+        app:elevation="10dp"
+        app:rippleColor="#EEA7A7"
+        app:srcCompat="@drawable/shop" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ItemBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview5"
+        android:layout_marginTop="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageButton
+        android:id="@+id/empty_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textview5"
+        android:alpha="0.8"
+        android:visibility="gone"
+        app:srcCompat="@drawable/emptycart" />
+
+</RelativeLayout>

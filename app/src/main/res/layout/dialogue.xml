@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/e_logo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#EE5A5A"
+            android:gravity="center"
+            android:text="Add New Value"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/e_logo"
+            android:ems="10"
+            android:hint="Enter Item Name"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:ems="10"
+            android:hint="Quantity Brought"
+            android:inputType="number"
+            android:maxWidth="80dp"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/requirred"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quantity"
+            android:ems="10"
+            android:hint="Requirred quantity"
+            android:inputType="number"
+            android:maxWidth="80dp"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/b_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/requirred"
+            android:ems="10"
+            android:hint="Cost In Rupee"
+            android:inputType="number"
+            android:padding="15dp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

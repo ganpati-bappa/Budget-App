@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/b"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginpage"
+    tools:context=".Login">
+
+    <EditText
+        android:id="@+id/Userhandle"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/text"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:foregroundGravity="left"
+        android:gravity="left"
+        android:hint="Username"
+        android:includeFontPadding="true"
+        android:inputType="textPersonName"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/Userhandle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="Password"
+        android:includeFontPadding="true"
+        android:inputType="textPersonName"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_button"
+        android:elevation="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="enter"
+        android:text="Login"
+        android:textColor="#E6F5F2F2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="0dp"
+        android:text="Welcome Back!"
+        android:textColor="#FCF7F7"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome"
+        android:layout_alignStart="@id/welcome"
+        android:layout_marginTop="0dp"
+        android:text="LogIn To your Account"
+        android:textColor="#F5EEEE"
+        android:textSize="24sp" />
+
+</RelativeLayout>

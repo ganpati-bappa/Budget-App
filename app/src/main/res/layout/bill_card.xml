@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/l11"
+        android:layout_width="70dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/relative11"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/de"
+        android:padding="5dp">
+
+        <ImageButton
+            android:id="@+id/edit_bills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit"
+            android:backgroundTint="#F7F6F6" />
+
+        <ImageButton
+            android:id="@+id/delete_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/delete"
+            android:backgroundTint="#FDFCFC" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative11"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:background="@drawable/norma">
+
+        <LinearLayout
+            android:id="@+id/l23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bills_logo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Bills_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="serif"
+                android:text="TextView"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="TextView"
+                android:textColor="#B91616"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Status"
+            android:layout_width="70dp"
+            android:layout_height="68dp"
+            android:layout_alignParentRight="true"
+            android:background="#5CB63B"
+            android:clickable="true"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Pay"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/bills_logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            app:srcCompat="@drawable/services" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

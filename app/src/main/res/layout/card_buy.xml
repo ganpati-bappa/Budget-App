@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/bag"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            app:srcCompat="@drawable/bag" />
+
+        <TextView
+            android:id="@+id/b_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/bag"
+            android:ellipsize="end"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:maxWidth="150dp"
+            android:text="TextView"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/b_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/b_name"
+            android:layout_toRightOf="@id/bag"
+            android:text="120"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/b_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/b_up"
+            android:ellipsize="start"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:inputType="number"
+            android:minWidth="40sp"
+            android:text="123"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/b_up"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_cost"
+            android:text="+"
+            android:textColor="#00C853"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/b_down"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/b_quantity"
+            android:background="@drawable/button_cost1"
+            android:text="-"
+            android:textColor="#D50000"
+            android:textSize="35sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="74dp"
+        android:fontFamily="serif"
+        android:text="Welcome"
+        android:textColor="#D9F7F2F2"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Welcome"
+        android:layout_marginStart="99dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="21dp"
+        android:text="To your Personal Inventory"
+        android:textColor="#CCF5E4E4"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="139dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/textView2"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/button"
+        android:fontFamily="serif"
+        android:onClick="LogIn"
+        android:text="Login"
+        android:textColor="#FCF3F3"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="21dp"
+        android:text="New Users"
+        android:textColor="#070707"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/page2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="21dp"
+        android:layout_toEndOf="@id/textview2"
+        android:onClick="registration"
+        android:text=" Register Here"
+        android:textColor="#F10A0A"
+        android:textSize="18sp" />
+</RelativeLayout>

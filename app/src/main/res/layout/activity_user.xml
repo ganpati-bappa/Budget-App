@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <TextView
+        android:id="@+id/UserStatus"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/rectangle7"
+        android:fontFamily="sans-serif-light"
+        android:gravity="left"
+        android:paddingStart="10dp"
+        android:paddingTop="20dp"
+        android:text="Ajay's Status"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="normal" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:elevation="10dp"
+        android:translationY="-80dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:fontFamily="cursive"
+                android:gravity="center|right"
+                android:padding="5dp"
+                android:text="Expenses"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/Pie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:clipChildren="true"
+                android:fitsSystemWindows="true"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"></com.github.mikephil.charting.charts.PieChart>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:elevation="10dp"
+        android:translationY="-60dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:fontFamily="cursive"
+                android:gravity="center|right"
+                android:padding="5dp"
+                android:text="Past 5 Bills"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/LineChart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"></com.github.mikephil.charting.charts.LineChart>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
